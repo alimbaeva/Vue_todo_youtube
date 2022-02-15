@@ -1,13 +1,14 @@
 <template>
-  <div id="app">
-    <h1>TODO APPLICATION h1</h1>
+  <div>
+    <h2>TODO APPLICATION</h2>
     <Addtodo @add-todo="addTodo" />
     <hr />
     <TodoList v-bind:todos="todos" @remove-todo="removeTodo" />
-
-    <!-- <router-view /> -->
   </div>
 </template>
+
+
+
 
 
 <script>
@@ -46,6 +47,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-</style>
